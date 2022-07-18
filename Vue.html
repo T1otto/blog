@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue 源码 | Nav1🪐</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/blog/favicon.ico">
+    <meta name="description" content="navi的个人blog">
+    <meta name="author" content="navi">
+    <meta name="keywords" content="navi">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.73b6f229.css" as="style"><link rel="preload" href="/blog/assets/js/app.98a103cb.js" as="script"><link rel="preload" href="/blog/assets/js/2.503560b4.js" as="script"><link rel="preload" href="/blog/assets/js/13.83e960fa.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.aed8a8ea.js"><link rel="prefetch" href="/blog/assets/js/11.45847f11.js"><link rel="prefetch" href="/blog/assets/js/12.c22f4c66.js"><link rel="prefetch" href="/blog/assets/js/14.51682351.js"><link rel="prefetch" href="/blog/assets/js/15.9742836f.js"><link rel="prefetch" href="/blog/assets/js/16.6d7aeed2.js"><link rel="prefetch" href="/blog/assets/js/17.7987bd5f.js"><link rel="prefetch" href="/blog/assets/js/18.ecb87faf.js"><link rel="prefetch" href="/blog/assets/js/19.180fec52.js"><link rel="prefetch" href="/blog/assets/js/20.f51c4ad1.js"><link rel="prefetch" href="/blog/assets/js/3.627099dc.js"><link rel="prefetch" href="/blog/assets/js/4.cf05086d.js"><link rel="prefetch" href="/blog/assets/js/5.be5d8659.js"><link rel="prefetch" href="/blog/assets/js/6.52ddd00a.js"><link rel="prefetch" href="/blog/assets/js/7.f71fbb16.js"><link rel="prefetch" href="/blog/assets/js/8.2f3f6f4d.js"><link rel="prefetch" href="/blog/assets/js/9.cfbdf154.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.73b6f229.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/assets/img/hero.png" alt="Nav1🪐" class="logo"> <span class="site-name can-hide">Nav1🪐</span></a> <div class="links"><!----> <div class="user-settings"><a href="#" class="settings-button"><svg aria-hidden="true" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 settings-icon"><path fill="currentColor" d="M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175 5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 80-35.888 80-80z"></path></svg></a> <div class="user-settings-menu" style="display:none;"><div class="theme-options"><!----> <ul class="color-theme-options"><li><a href="#" class="default-theme"></a></li> <li><a href="#" class="blue-theme"></a></li><li><a href="#" class="red-theme"></a></li><li><a href="#" class="purple-theme"></a></li></ul> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox"></div> <div class="ignore-themes-options toggle-option"><label for="ignore-themes-toggle">Ignore Other Themes?</label> <input id="ignore-themes-toggle" type="checkbox"></div> <!----></div></div></div> <!----> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/introduction/" class="nav-link">
+  intro
+</a></div><div class="nav-item"><a href="/blog/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/H5/" class="nav-link">
+  HTML + CSS
+</a></li><li class="dropdown-subitem"><a href="/blog/JavaScript/" class="nav-link">
+  JS + TS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/blog/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/node/" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><a href="/blog/network/" class="nav-link">
+  网络
+</a></div><div class="nav-item"><a href="/blog/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/blog/cs/" class="nav-link">
+  CS课程
+</a></div><div class="nav-item"><a href="/blog/others/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/introduction/" class="nav-link">
+  intro
+</a></div><div class="nav-item"><a href="/blog/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/H5/" class="nav-link">
+  HTML + CSS
+</a></li><li class="dropdown-subitem"><a href="/blog/JavaScript/" class="nav-link">
+  JS + TS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/blog/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/node/" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><a href="/blog/network/" class="nav-link">
+  网络
+</a></div><div class="nav-item"><a href="/blog/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/blog/cs/" class="nav-link">
+  CS课程
+</a></div><div class="nav-item"><a href="/blog/others/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue 源码</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/Vue.html#vue-源码" class="sidebar-link">Vue 源码</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Vue.html#响应式原理" class="sidebar-link">响应式原理</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Vue.html#路由懒加载-按需加载" class="sidebar-link">路由懒加载(按需加载)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Vue.html#v-if-和-v-show" class="sidebar-link">v-if 和 v-show</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Vue.html#data-必须为函数" class="sidebar-link">data 必须为函数</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Vue.html#vue-生命周期" class="sidebar-link">Vue 生命周期</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Vue.html#vue2-和-vue3-区别" class="sidebar-link">Vue2 和 Vue3 区别</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Vue.html#vue-常见问题" class="sidebar-link">Vue 常见问题</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Vue.html#vue-与-react-对比" class="sidebar-link">Vue 与 React 对比</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Vue.html#todo-list" class="sidebar-link">todo-list</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="vue-源码"><a href="#vue-源码" class="header-anchor">#</a> Vue 源码</h2> <p><a href="https://vue-js.com/learn-vue/start/#_1-%E5%89%8D%E8%A8%80" target="_blank" rel="noopener noreferrer">Vue<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><br> <a href="https://juejin.cn/post/6857669921166491662" target="_blank" rel="noopener noreferrer">响应式原理<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="响应式原理"><a href="#响应式原理" class="header-anchor">#</a> 响应式原理</h2> <p>Observer 类会通过递归的方式把一个对象的所有属性都转化成可观测对象<br>
+依赖管理器 Dep 类<br>
+数据变化时，我们不直接去通知依赖更新，而是通知依赖对应的 Watch 实例，由 Watcher 实例去通知真正的视图。
+不足:<br>
+1.虽然我们通过 Object.defineProperty 方法实现了对 object 数据的可观测，但是这个方法仅仅只能观测到 object 数据的取值及设置值，当我们向 object 数据里添加一对新的 key/value 或删除一对已有的 key/value 时，它是无法观测到的，导致当我们对 object 数据添加或删除值时，无法通知依赖，无法驱动视图进行响应式更新。<br>
+2.通过数组下标修改数组中的数据<br>
+3.通过修改数组长度清空(改变)数组
+解决:<br>
+Vue 增加了两个全局 API:Vue.set 和 Vue.delete,更进一步:Proxy</p> <h2 id="路由懒加载-按需加载"><a href="#路由懒加载-按需加载" class="header-anchor">#</a> 路由懒加载(按需加载)</h2> <p><a href="https://www.cnblogs.com/smzd/p/8665676.html" target="_blank" rel="noopener noreferrer">三种<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><br>
+非懒加载：</p> <p>懒加载方式一：使用 import 方法，切换相应的 path 时调用组件</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">List</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">&quot;@/components/list.vue&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VueRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routes<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> path<span class="token operator">:</span> <span class="token string">&quot;/list&quot;</span><span class="token punctuation">,</span> component<span class="token operator">:</span> List <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="v-if-和-v-show"><a href="#v-if-和-v-show" class="header-anchor">#</a> v-if 和 v-show</h2> <h2 id="data-必须为函数"><a href="#data-必须为函数" class="header-anchor">#</a> data 必须为函数</h2> <p>如果是对象，那么多个组件指向同一个对象，修改一个会导致全部都修改。
+<a href="https://www.dazhuanlan.com/ren2012r4/topics/1192478" target="_blank" rel="noopener noreferrer">例子<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+如果组件中 data 选项是一个函数，那么每个实例可以维护一份被返回对象的独立的拷贝，组件实例之间的 data 属性值不会互相影响;<br>
+而 new Vue 的实例(根组件)，是不会被复用的，因此不存在引用对象的问题。<a href="https://www.cnblogs.com/lovekunkun/p/12144596.html" target="_blank" rel="noopener noreferrer">例子<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="vue-生命周期"><a href="#vue-生命周期" class="header-anchor">#</a> Vue 生命周期</h2> <p>1、new Vue(): 执行_init 函数，初始化一些属性：如 initLifecycle、initEvents、initRender，然后执行 beforeCreate<br>
+2、调用 beforeCreate()钩子, 之后初始化 inject、state 包括 props、methods、data、computed、watch，然后执行 created<br>
+3、调用 created()钩子，所以在 created 能拿到 data 等数据，created 之后，调用 $mount() 把组件挂载到 dom 上, 然后对模板进行编译，编译过程: 生成抽象语法树 AST，优化 AST+标记静态节点(因为静态节点不更新,能够优化性能)，根据 AST 生成 render 函数, 然后执行 beforeMount<br>
+4、调用 beforeMount 钩子之后，vm._update(vm._render(), hydrating)，render 方法生成 vnode、而 update 方法会对 vnode 进行 patch，挂载到真实 dom 上，因为是首次，不需要进行新旧节点的 diff(vm._render 用来生成虚拟 dom、执行 dom-diff、更新真实 dom。)<br>
+5、调用 mounted 钩子之后，组件就已经挂载到真实 dom 上，所以可以拿到 dom<br>
+6、beforeUpdate 和 updated 的过程类似<br>
+7、beforeDestroy 和 destroyed 之间进行组件的销毁操作，比如进行清除父子关系、watcher 关闭等逻辑</p> <h2 id="vue2-和-vue3-区别"><a href="#vue2-和-vue3-区别" class="header-anchor">#</a> Vue2 和 Vue3 区别</h2> <p>1、响应式原理改为 proxy<br>
+2、diff 优化：patchFlag：给动态节点加上标记，动态节点类似于：，编译解析过程中会给动态节点添加标记。这样做有利于 diff 算法在对比 dom 树的时候，省去对比静态节点，直接对比有标记的动态节点。<br>
+3、生命周期更改：beforeCreate 和 created 被 setup 替换、beforeDestroy 替换为 beforeUnmount、destroyed 替换为 unmounted(更加语义化)<br>
+4、采用 Fragment: template 可以写多个根元素<br>
+5、更好的 Tree-Shaking<br>
+MDN：Tree shaking 是一个通常用于描述移除 JavaScript 上下文中的未引用代码(dead-code) 行为的术语。<br>
+6、更好的支持 TS<br>
+总结：更小(tree-shaking)、更快(改用 proxy, 两个优点：性能好无需递归遍历; 不用为数组单独重写原型方法)、维护性高(monorepo 结构)、VDOM Diff 重构(标记静态节点(不需比较)、静态标记?、事件缓存?)、composition API、</p> <h2 id="vue-常见问题"><a href="#vue-常见问题" class="header-anchor">#</a> Vue 常见问题</h2> <p>1、nextTick<br>
+由于 dom(数据)的更新是异步的(类比 setState)，Vue 的 this.$nextTick 方法是将执行逻辑放在 dom 更新之后执行，可以拿到最新的 dom/数据，再比如 created 钩子中 dom 还未挂载，那么也可以用这个方法来实现操作 dom。<br>
+2、<a href="https://juejin.cn/post/6863241580753616903#heading-12" target="_blank" rel="noopener noreferrer">Vue 模板编译过程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><br>
+3、<a href="https://segmentfault.com/a/1190000022248237" target="_blank" rel="noopener noreferrer">keep-alive 缓存组件的原理<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><br>
+① 首次渲染(执行正常的生命周期钩子和 activated)的时候，除了再  中建立缓存，设置 vnode.data.keepAlive 为 true，其他的过程和普通组件一样。</p> <h2 id="vue-与-react-对比"><a href="#vue-与-react-对比" class="header-anchor">#</a> Vue 与 React 对比</h2> <p><a href="https://juejin.cn/post/6844904158093377549#heading-2" target="_blank" rel="noopener noreferrer">详细<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><br>
+1、响应式：<br>
+Vue: 2 里是 defineProperty 和发布订阅模式、3 是 proxy<br>
+React：react 通过 setState 主动触发数据变化。
+2、diff：<br>
+相同点：同层级 On、唯一 key
+Vue 采用双端指针(找到同一 key 的节点，移动即可，复用)，找到新旧节点的位置，边移动指针边对比边更新<br>
+React 是从头开始比对 node，从而去新增、删除或移动节点(没有采用双端指针)<br>
+3、事件<br>
+React 采用合成事件，所有事件都冒泡到顶层 document 监听，然后在这里合成事件下发<br>
+4、核心思想不同<br>
+Vue 推崇渐进式开发(灵活易用，只需要使用核心的响应式和 diff 即可开发)、template(静态模板)、三部分分离<br>
+React 推崇函数式开发(hooks)、jsx(动态，更多的是写 js，复杂的 js 逻辑，更适合复杂的 js 逻辑)</p> <h2 id="todo-list"><a href="#todo-list" class="header-anchor">#</a> todo-list</h2></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">10/13/2021, 5:08:42 PM</span></div></footer> <!----> </main></div><div class="global-ui"><div id="goTop" class="hide-cat" data-v-bf92849a></div></div></div>
+    <script src="/blog/assets/js/app.98a103cb.js" defer></script><script src="/blog/assets/js/2.503560b4.js" defer></script><script src="/blog/assets/js/13.83e960fa.js" defer></script>
+  </body>
+</html>
